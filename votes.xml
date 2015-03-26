@@ -1,0 +1,5 @@
+<votes>
+    <row Id="1" PostId="1" VoteTypeId="2" CreationDate="2010-07-28T00:00:00.000" />
+    ...
+    <row Id="1660600" PostId="594033" VoteTypeId="15" CreationDate="2015-03-08T00:00:00.000" />
+</votes>

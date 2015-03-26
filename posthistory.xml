@@ -1,0 +1,5 @@
+<posthistory>
+    <row Id="1" PostHistoryTypeId="2" PostId="1" RevisionGUID="0c0a2a64-8fac-428d-95a1-9ea8eae674c0" CreationDate="2010-07-28T19:04:21.300" UserId="5" Text="Everytime I turn on my computer, I see a message saying something like:&#xD;&#xA;&#xD;&#xA;&gt; Your battery may be old or broken. Etc...&#xD;&#xA;&#xD;&#xA;I know my battery is not working. How can I make the message go away?" />
+    ...
+    <row Id="2196936" PostHistoryTypeId="2" PostId="594070" RevisionGUID="5ef6ae33-7b1c-4c69-a396-a2c15f690eb9" CreationDate="2015-03-08T03:51:44.747" UserId="359858" Text="This should not have anything to do with Ubuntu. This should be specific to your laptop. Therefore, a manual specifically for your Asus N56JK should be the best approach.&#xD;&#xA;&#xD;&#xA;Still it would be interesting to know, have you already tested the Fn keys within Windows?" />
+</posthistory>
