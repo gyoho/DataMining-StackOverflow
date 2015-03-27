@@ -3,3 +3,19 @@
     ...
     <row Id="385906" Reputation="1" CreationDate="2015-03-08T03:48:48.667" DisplayName="Kelppo" LastAccessDate="2015-03-08T03:48:48.667" Views="0" UpVotes="0" DownVotes="0" ProfileImageUrl="https://www.gravatar.com/avatar/ce46b3fb6d0208d81f003bf787a6146d?s=128&amp;d=identicon&amp;r=PG&amp;f=1" AccountId="5903008" />
 </users>
+
+
+Id
+Reputation
+CreationDate
+DisplayName
+LastAccessDate
+WebsiteUrl
+Location
+AboutMe
+Views
+UpVotes
+DownVotes
+EmailHash (now always blank)
+AccountId
+Age

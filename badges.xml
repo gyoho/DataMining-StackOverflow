@@ -3,3 +3,12 @@
     ...
     <row Id="510608" UserId="189539" Name="Popular Question" Date="2015-03-08T03:46:29.547" />
 </badges>
+
+
+Id
+UserId, e.g.: "420"
+Name, e.g.: "Teacher"
+Date, e.g.: "2008-09-15T08:55:03.923"
+
+
+ref: http://askubuntu.com/help/badges

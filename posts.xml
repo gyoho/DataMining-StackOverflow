@@ -3,3 +3,34 @@
     ...
     <row Id="594070" PostTypeId="2" ParentId="594068" CreationDate="2015-03-08T03:51:44.747" Score="0" Body="&lt;p&gt;This should not have anything to do with Ubuntu. This should be specific to your laptop. Therefore, a manual specifically for your Asus N56JK should be the best approach.&lt;/p&gt;&#xA;&#xA;&lt;p&gt;Still it would be interesting to know, have you already tested the Fn keys within Windows?&lt;/p&gt;&#xA;" OwnerUserId="359858" LastActivityDate="2015-03-08T03:51:44.747" CommentCount="0" />
 </posts>
+
+
+PostTypeId (listed in the PostTypes table)
+    1:Question
+    2:Answer
+    3:Orphaned tag wiki
+    4:Tag wiki excerpt
+    5:Tag wiki
+    6:Moderator nomination
+    7:"Wiki placeholder" (seems to only be the election description)
+    8:Privilege wiki
+
+AcceptedAnswerId (only present if PostTypeId is 1)
+ParentID (only present if PostTypeId is 2)
+CreationDate
+Score
+ViewCount
+Body
+OwnerUserId (present only if user has not been deleted; always -1 for tag wiki entries (i.e., the community user owns them))
+OwnerDisplayName
+LastEditorUserId
+LastEditorDisplayName="Rich B"
+LastEditDate="2009-03-05T22:28:34.823" - the date and time of the most recent edit to the post
+LastActivityDate="2009-03-11T12:51:01.480" - the date and time of the most recent activity on the post. For a question, this could be the post being edited, a new answer was posted, a bounty was started, etc.
+Title
+Tags
+AnswerCount
+CommentCount
+FavoriteCount
+ClosedDate (present only if the post is closed)
+CommunityOwnedDate (present only if post is community wikied)
