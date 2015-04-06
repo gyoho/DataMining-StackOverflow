@@ -38,13 +38,15 @@ PostHistoryTypeId
     37. Post merge source
     38. Post merge destination
 
-PostId
+PostId: refer to Id in posts.xml
+
 RevisionGUID: At times more than one type of history record can be recorded by a single action. All of these will be grouped using the same RevisionGUID
 CreationDate: "2009-03-05T22:28:34.823"
 UserId
 UserDisplayName: populated if a user has been removed and no longer referenced by user Id
 
-Comment: This field will contain the comment made by the user who edited a post. If PostHistoryTypeId = 10, this field contains the CloseReasonId of the close reason (listed in CloseReasonTypes):
+Comment: This field will contain the comment made by the user who edited a post.
+         If PostHistoryTypeId = 10, this field contains the CloseReasonId of the close reason (listed in CloseReasonTypes):
     Old close reasons:
         1: Exact Duplicate
         2: Off-topic
