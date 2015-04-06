@@ -5,8 +5,7 @@
 </votes>
 
 
-Id
-PostId
+PostId: refer to Id in posts.xml
 
 VoteTypeId (listed in the VoteTypes table)
     1 - AcceptedByOriginator
