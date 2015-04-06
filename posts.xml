@@ -15,22 +15,41 @@ PostTypeId (listed in the PostTypes table)
     7:"Wiki placeholder" (seems to only be the election description)
     8:Privilege wiki
 
-AcceptedAnswerId (only present if PostTypeId is 1)
-ParentID (only present if PostTypeId is 2)
+AcceptedAnswerId (only present if PostTypeId is 1): refer to Id --> Answer
+
+ParentID (only present if PostTypeId is 2): refer to Id --> Question
+
 CreationDate
-Score
-ViewCount
-Body
-OwnerUserId (present only if user has not been deleted; always -1 for tag wiki entries (i.e., the community user owns them))
-OwnerDisplayName
-LastEditorUserId
+
+Score: for Question and Answer
+
+ViewCount: only present in Question
+
+Body: Need to remove comment formatting <ref: http://askubuntu.com/editing-help#comment-formatting>
+
+OwnerUserId: refer to Id in users.xml
+(present only if user has not been deleted; always -1 for tag wiki entries (i.e., the community user owns them))
+OwnerDisplayName: OwnerUserId or OwnerDisplayName must be present
+
+LastEditorUserId: refer to Id in users.xml
 LastEditorDisplayName="Rich B"
+
 LastEditDate="2009-03-05T22:28:34.823" - the date and time of the most recent edit to the post
-LastActivityDate="2009-03-11T12:51:01.480" - the date and time of the most recent activity on the post. For a question, this could be the post being edited, a new answer was posted, a bounty was started, etc.
-Title
+
+LastActivityDate="2009-03-11T12:51:01.480" - the date and time of the most recent activity on the post.
+- For a question, this could be the post being edited, a new answer was posted, a bounty was started, etc.
+
+Title: only present in Question
+
 Tags
-AnswerCount
+
+AnswerCount: only present in Question
+
 CommentCount
-FavoriteCount
+
+FavoriteCount: only present in Question
+
 ClosedDate (present only if the post is closed)
-CommunityOwnedDate (present only if post is community wikied)
+
+CommunityOwnedDate: not so important
+(present only if post is community wikied)
