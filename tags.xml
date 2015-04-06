@@ -5,8 +5,9 @@
 </tags>
 
 
-Id
 TagName
-Count
-ExcerptPostId
-WikiPostId
+
+Count: number of questions tagged with this tag
+
+ExcerptPostId: refer to Id in posts.xml
+WikiPostId: refer to Id in posts.xml
