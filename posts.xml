@@ -13,8 +13,8 @@ PostTypeId (listed in the PostTypes table)
 [Not important]
     3:Orphaned tag wiki
     4:Tag wiki excerpt
-    5:Tag wiki
-    6:Moderator nomination: Moderator(experienced users) election
+    5:Tag wiki <ref: http://askubuntu.com/questions/tagged/dockbarx?sort=frequent&pageSize=50></ref>
+    6:Moderator nomination: Moderator(experienced users) election <ref: http://askubuntu.com/election/1?tab=election></ref:http>
     7:"Wiki placeholder" (seems to only be the election description)
     8:Privilege wiki
 
