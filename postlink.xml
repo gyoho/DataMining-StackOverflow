@@ -5,10 +5,12 @@
 </postlinks>
 
 
-Id primary key
-CreationDate when the link was created
-PostId id of source post
-RelatedPostId id of target/related post
+Id
+CreationDate
+
+[Refer to posts.xml]
+    - PostId: contains href to another post(question)
+    - RelatedPostId: id of target/related post
 
 LinkTypeId type of link
     1. Linked
