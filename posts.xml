@@ -6,12 +6,15 @@
 
 
 PostTypeId (listed in the PostTypes table)
+[Important]
     1:Question
     2:Answer
+    
+[Not important]
     3:Orphaned tag wiki
     4:Tag wiki excerpt
     5:Tag wiki
-    6:Moderator nomination
+    6:Moderator nomination: Moderator(experienced users) election
     7:"Wiki placeholder" (seems to only be the election description)
     8:Privilege wiki
 
