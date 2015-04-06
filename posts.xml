@@ -10,10 +10,10 @@ PostTypeId (listed in the PostTypes table)
     1:Question
     2:Answer
     
-[Not important]
+[Not important] relate to tags.xml
     3:Orphaned tag wiki
-    4:Tag wiki excerpt
-    5:Tag wiki <ref: http://askubuntu.com/questions/tagged/dockbarx?sort=frequent&pageSize=50></ref>
+    4:Tag wiki excerpt: post of info about a certain tag
+    5:Tag wiki: post of info about a certain tag
     6:Moderator nomination: Moderator(experienced users) election <ref: http://askubuntu.com/election/1?tab=election></ref:http>
     7:"Wiki placeholder" (seems to only be the election description)
     8:Privilege wiki
