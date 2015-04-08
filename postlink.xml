@@ -8,8 +8,8 @@
 Id
 CreationDate
 
-[Refer to posts.xml]
-    - PostId: contains href to another post(question)
+[Refer to posts.xml] Question --> Question (1:1)
+    - PostId: contains href to another post
     - RelatedPostId: id of target/related post
 
 LinkTypeId type of link
