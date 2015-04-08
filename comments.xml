@@ -6,7 +6,7 @@
 
 
 Id
-PostId
+PostId: refer to Id in posts.xml
 Score (Only present if score > 0)
 Text, e.g.: "@Stu Thompson: What a horrible idea, you clueless git!"
 CreationDate, e.g.:"2008-09-06T08:07:10.730"
