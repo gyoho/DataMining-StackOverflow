@@ -28,7 +28,7 @@ Score: for Question and Answer
 
 ViewCount: only present in Question
 
-Body: Need to remove comment formatting <ref: http://askubuntu.com/editing-help#comment-formatting>
+Body: Need to remove comment formatting <ref: http://stackoverflow.com/questions/18701328/what-does-lt-pgt-mean-in-query-results>
 
 OwnerUserId: refer to Id in users.xml
 (present only if user has not been deleted; always -1 for tag wiki entries (i.e., the community user owns them))
