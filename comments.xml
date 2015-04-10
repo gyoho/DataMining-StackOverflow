@@ -5,7 +5,7 @@
 </comments>
 
 
-Id
+Id: not cotinuous
 PostId: refer to Id in posts.xml
 Score (Only present if score > 0)
 Text, e.g.: "@Stu Thompson: What a horrible idea, you clueless git!"
