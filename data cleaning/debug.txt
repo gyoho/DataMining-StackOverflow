@@ -1,0 +1,32 @@
+
+
+// Pig Script ERROR
+2015-04-08 22:09:57,315 [main] ERROR org.apache.pig.tools.grunt.Grunt - ERROR 2999: Unexpected internal error. java.net.URISyntaxException: Expected scheme-specific part at index 5: hdfs:
+
+[Solution] /user/hue/AskUbuntu/posts_sample.xml --> hdfs://sandbox.hortonworks.com:8020/user/hue/AskUbuntu/posts_sample.xml
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+1:Every time I turn on my computer, I see a message saying something like:  Your battery may be old or broken.   I am already aware that my battery is bad. How do I suppress this message? 
+2:Maybe these instructions will help you to get rid of that message.  Added instructions from the link, Alt+F2, then type in gconf-editor.   Navigate to /apps/gnome-power-manager/notify/low_capacity and untick the value.  Or a single command:  gconftool --set /apps/gnome-power-manager/notify/low_capacity --type boolean false  
+3:How can I set the Software Center to allow non-root users to install stuff from the Ubuntu repos without having to type in their password?  I'm fully aware of the security implications, and I am willing to take the risk. Fedora 12 shipped with something like this. (By modifying the PolicyKit configuration, I believe) 
+4:What are some alternatives to upgrading without using the standard upgrade system? Suppose for example that I wanted to upgrade an Ubuntu installation on a machine with a poor Internet connection. What would my options be? Could I just use a standard Ubuntu disk to upgrade this machine? If I already have a standard Ubuntu disk and want to use that, could I do a clean install without wiping data? 
+5:I have a ubuntu development server at work. It is an old rack server that is located somewhere in the company's dungeon, where nobody ever goes. The only way it can work is as a so-called headless server (i.e. with no monitor/keyboard connected and only accepting network connections).  Obviously, if you just need terminal access ssh is more than enough. I, however, would also like to connect to the graphical interface from time to time. At the moment I am using the built in VNC functionality but I am pretty sure this is neither the most efficient nor the most secure way of approaching this issue.  I have done a bit of research on the issue but failed to come to any definite conclusions. I read about trying to forward the X environment over ssh, which would at least solve my security concerns. Can anyone share their experiences in setting this up? Is there any other way that might be worth looking at?  I almost exclusively connect to this server from a Windows machine. I don't know if that might be a problem for some of the methods suggested. 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+2015-04-12 09:33:50,345 [main] ERROR org.apache.pig.tools.grunt.Grunt  - ERROR 1115: org.apache.hcatalog.common.HCatException : 2001 : Error setting output information. Cause : com.google.common.util.concurrent.UncheckedExecutionException: javax.jdo.JDOFatalInternalException: Error creating transactional connection factory
+NestedThrowables:
+java.lang.reflect.InvocationTargetException
+
+>> You need to add hive-site.xml as a File under Properties -> Resources in Hue to tell pig which metastore to use.
+
+
+1. upload /etc/hive/conf/ve-site.xml from local into your space in hdfs
+2. add the file in Pig Properties -> Resources
+3. import data in Metastore manager --> posts_table 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
