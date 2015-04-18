@@ -11,7 +11,7 @@ CreationDate
 [Refer to posts.xml] Question --> Question (1:1)
     - PostId: contains href to another post
     - RelatedPostId: id of target/related post
-** Even refers to an answer, it links to the question containg the answer
+** Questions Id of Link linking from Question and ITS answers
 
 LinkTypeId type of link
     1. Linked
