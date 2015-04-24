@@ -1,3 +1,10 @@
+# total questions --> 182017
+select id
+from postsQuality
+where posttypeid = 1
+order by id;
+
+
 select AVG(score) as avgScore
 from postsQuality;
 # 2.1249
@@ -36,6 +43,7 @@ update postsQuality set viewcount = viewcount/1000;
 select MAX(viewcount) as avgScore
 from postsQuality;
 # 1223
+## Decide to ignore viewcount as score
 
 
 -- ----------------------------------------------------------
@@ -43,7 +51,8 @@ from postsQuality;
 -- ref: http://stackoverflow.com/questions/20062270/sql-query-to-get-the-sum-of-all-column-values-in-the-last-row-of-a-resultset-alo
 -- ----------------------------------------------------------
 
-select question.questionId as questionId, (question.questionQuality + answer.totalAnswerQuality) as overallQuality
+# this only returns the questions having at least one answer
+select question.questionId as Id, (question.questionQuality + answer.totalAnswerQuality) as Size
 from 
 		# include all: score, answercount, commentcount, favoritecount for Question type
 		(select id as questionId, (score + answercount + commentcount + favoritecount) as questionQuality
@@ -58,9 +67,14 @@ from
 			from postsQuality
 			where posttypeid = 2) as individualAnswer
 		group by questionId) as answer
-	on question.questionId = answer.questionId;
-
-
+	on question.questionId = answer.questionId
+union
+# need to union with the questions with no answer
+select id as Id, (score + answercount + commentcount + favoritecount) as Size
+from postsQuality
+where posttypeid = 1 and id not in
+	(select parentid from postsQuality where posttypeid = 2)
+Order by Id;
 
 -- ----------------------------------------------------------
 -- Test

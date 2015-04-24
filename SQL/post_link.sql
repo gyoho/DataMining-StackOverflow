@@ -11,31 +11,25 @@ ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
-
-
 select count(postId)
 from postLink;
-# 109327
+# 109326
 
-select count(distinct(postId))
+select count(distinct postId, relatedPostId)
 from postLink;
-# 68446
+# 87393
 
-select count(*)
+
+select postId, relatedPostId
 from postLink
-where relatedPostId = postId
-order by postId;
-# 18
-
-
-select *
-from postLink
+where postId<=1027 and relatedPostId<=1027
 order by postId;
 
 
 
 # combine post link data with comment link data
-(select postId, relatedPostId
+# by default 'union' selects only unique rows
+(select distinct postId, relatedPostId
 from postLink)
 union
 (select c.postId as postId, c.relatedPostId as relatedPostId

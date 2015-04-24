@@ -12,7 +12,7 @@
 
 > question.docs <- VectorSource(doc.list)
 > question.name <- names(doc.list)
-> question.corpus <- Corpus(questions.docs)
+> question.corpus <- Corpus(question.docs)
 
 
 
@@ -75,3 +75,20 @@ getCosineSimilarity <- function(dtm) {
 > colnames(docTfIdf.scores) <- question.name
 > write.csv(docTfIdf.scores, "CosineTfIdfScores.csv", row.names=question.name)
 > write.csv(docTfIdf.scores, "CosineTfIdfScores_NoRowNum.csv", row.names=FALSE, col.names=FALSE)
+
+# Covert to upper triangle matrix
+# all values in lower triangle is 0
+## docBin.scores.upperTri <- docBin.scores
+## docBin.scores.upperTri[lower.tri(docBin.scores.upperTri, diag=TRUE)] <- 0
+########## Didn't work well. All final val = 0...
+
+# Convert symantric matrix to pairwise vector
+# ref: http://r.789695.n4.nabble.com/Conversion-of-symmetry-matrix-into-a-vector-td4075004.html
+> docBin.scores.vec <- as.dist(docBin.scores)
+> docBin.scores.pair <- melt(as.matrix(docBin.scores.vec))
+
+# fileter unique combination
+# ref: http://stackoverflow.com/questions/8363278/how-to-filter-for-unique-combination-of-columns-from-an-r-dataframe
+> docBin.scores.unique.pair <- unique(docBin.scores.pair[,c('X1','X2')])
+
+> write.csv(docBin.scores.pair, "CosineBinScores_pair.csv")

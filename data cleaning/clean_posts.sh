@@ -39,6 +39,12 @@ $ cat Comments.xml | grep http://askubuntu.com/ | wc -l
 -------------------------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------
 
+0. Extract only Questions
+- PostTypeId = 1
+- use grep
+
+$ grep "<row Id=\"[0-9]*\" PostTypeId=\"1\"" posts.xml > posts_questions.xml
+
 /***
 1. Extract Body  <ref: http://stackoverflow.com/questions/5080988/how-to-extract-string-following-a-pattern-with-grep-regex-or-perl>
 - Use grep and regex
@@ -69,7 +75,7 @@ regex: Text=".*http:\/\/askubuntu.com\/questions\/
 regex: <row\sId="([0-9]*)".*Body="([^"]*)".*>
 
 ** Use extended regex flag '-r' \( and \) => ( and )   i.e) no need backslash
-$ sed -r 's/<row\sId="([0-9]*)".*Body="([^"]*)".*>/\1:\t\2/' posts.xml > id-body.txt
+$ sed -r 's/<row\sId="([0-9]*)".*Body="([^"]*)".*>/\1,\2/' posts_questions.xml > id-body.txt
 
 
 In tag=Body remove every symblo listed below
@@ -94,17 +100,15 @@ Regex tester: <ref: http://www.regexr.com/>
 
 
 4. Remove symblos
-- *
 
-- remove grammar characters {,.?!:;()} and &gt and &lt
-$ sed 's/[,.?!;()]//g' id-contents_removed_HTML-tags.txt | sed 's/&gt//g' | sed 's/&lt//g' > id-contents_deleted_grammer_symbols.txt
+- remove grammar characters {,.?!:;"()} and &gt and &lt
+$ sed 's/[,.?!;"()#\[\]]//g' id-contents_removed_HTML-tags.txt | sed 's/&gt//g' | sed 's/&lt//g' > id-contents_deleted_grammer_symbols.txt
 
 - replace {@/-} with ' '
-$ sed 's/[*@/-]/ /g' id-contents_deleted_grammer_symbols.txt > id-contents_erased_specia_chars.txt
+$ sed 's/[*@/-]/ /g' id-contents_deleted_grammer_symbols.txt > id-contents_erased_special_chars.txt
 
 - word: --> word   BUT NOT) number: 
-$ sed -r 's/([A-Za-z]):/\1/g' id-contents_erased_specia_chars.txt > id-content.txt
-
+$ sed -r 's/([A-Za-z]):/\1/g' id-contents_erased_special_chars.txt > id-contents.txt
 
 
 *This is italicized*, and so is _this_.
