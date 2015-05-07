@@ -1,5 +1,8 @@
 # DataMining-StackExchange
 
+### Demo running on Heroku
+[Live Demo on Heroku](https://cmpe239-heineken.herokuapp.com/)
+
 ## Resource
 * Data Source: https://archive.org/details/stackexchange
 * Ask Ubuntu: [Tutorial](http://askubuntu.com/tour)
