@@ -1,3 +1,4 @@
 # untrack the gephi data
-gephi/
+data
+gephi
 .DS_Store
