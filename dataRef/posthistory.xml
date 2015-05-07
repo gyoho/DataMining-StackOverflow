@@ -1,0 +1,68 @@
+<posthistory>
+    <row Id="1" PostHistoryTypeId="2" PostId="1" RevisionGUID="0c0a2a64-8fac-428d-95a1-9ea8eae674c0" CreationDate="2010-07-28T19:04:21.300" UserId="5" Text="Everytime I turn on my computer, I see a message saying something like:&#xD;&#xA;&#xD;&#xA;&gt; Your battery may be old or broken. Etc...&#xD;&#xA;&#xD;&#xA;I know my battery is not working. How can I make the message go away?" />
+    ...
+    <row Id="2196936" PostHistoryTypeId="2" PostId="594070" RevisionGUID="5ef6ae33-7b1c-4c69-a396-a2c15f690eb9" CreationDate="2015-03-08T03:51:44.747" UserId="359858" Text="This should not have anything to do with Ubuntu. This should be specific to your laptop. Therefore, a manual specifically for your Asus N56JK should be the best approach.&#xD;&#xA;&#xD;&#xA;Still it would be interesting to know, have you already tested the Fn keys within Windows?" />
+</posthistory>
+
+
+PostHistoryTypeId
+    1. Initial Title - The first title a question is asked with.
+    2. Initial Body - The first raw body text a post is submitted with.
+    3. Initial Tags - The first tags a question is asked with.
+    4. Edit Title - A question's title has been changed.
+    5. Edit Body - A post's body has been changed, the raw text is stored here as markdown.
+    6. Edit Tags - A question's tags have been changed.
+    7. Rollback Title - A question's title has reverted to a previous version.
+    8. Rollback Body - A post's body has reverted to a previous version - the raw text is stored here.
+    9. Rollback Tags - A question's tags have reverted to a previous version.
+    10. Post Closed - A post was voted to be closed.
+    11. Post Reopened - A post was voted to be reopened.
+    12. Post Deleted - A post was voted to be removed.
+    13. Post Undeleted - A post was voted to be restored.
+    14. Post Locked - A post was locked by a moderator.
+    15. Post Unlocked - A post was unlocked by a moderator.
+    16. Community Owned - A post has become community owned.
+    17. Post Migrated - A post was migrated. superseded now with id 35 and 36 (away/here)
+    18. Question Merged - A question has had another, deleted question merged into itself.
+    19. Question Protected - A question was protected by a moderator.
+    20. Question Unprotected - A question was unprotected by a moderator.
+    21. Post Disassociated - An admin removes the OwnerUserId from a post.
+    22. Question Unmerged - A previously merged question has had its answers and votes restored.
+    24. Suggested Edit Applied
+    25. Post Tweeted
+    31. Comment discussion moved to chat
+    33. Post notice added
+    34. Post notice removed
+    35. Post migrated away replaces id 17
+    36. Post migrated here replaces id 17
+    37. Post merge source
+    38. Post merge destination
+
+PostId: refer to Id in posts.xml
+
+RevisionGUID: At times more than one type of history record can be recorded by a single action. All of these will be grouped using the same RevisionGUID
+CreationDate: "2009-03-05T22:28:34.823"
+UserId
+UserDisplayName: populated if a user has been removed and no longer referenced by user Id
+
+Comment: This field will contain the comment made by the user who edited a post.
+         If PostHistoryTypeId = 10, this field contains the CloseReasonId of the close reason (listed in CloseReasonTypes):
+    Old close reasons:
+        1: Exact Duplicate
+        2: Off-topic
+        3: Subjective and argumentative
+        4: Not a real question
+        7: Too localized
+        10: General reference
+        20: Noise or pointless (Meta sites only)
+    Current close reasons:
+        101: Duplicate
+        102: Off-topic
+        103: Unclear what you're asking
+        104: Too broad
+        105: Primarily opinion-based
+        
+Text: A raw version of the new value for a given revision
+    If PostHistoryTypeId = 10, 11, 12, 13, 14, or 15 this column will contain a JSON encoded string with all users who have voted for the PostHistoryTypeId
+    If it is a duplicate close vote, the JSON string will contain an array of original questions as OriginalQuestionIds
+    If PostHistoryTypeId = 17 this column will contain migration details of either from <url> or to <url>
