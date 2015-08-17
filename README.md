@@ -1,4 +1,4 @@
-# DataMining-StackExchange
+# DataMining - Network Graph on Ask Ubuntu Question Forum
 
 ### Demo running on Heroku
 [Live Demo on Heroku](https://cmpe239-heineken.herokuapp.com/)
