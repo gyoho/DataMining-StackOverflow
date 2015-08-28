@@ -1,5 +1,6 @@
 # DataMining - Network Graph on Ask Ubuntu Question Forum
 SJSU CMPE239 - Web and Data Mining class project
+
 **Mission**
 Visualize the `queality` and `relationship` of questions on Ask Ubuntu forum by a `network graph`.
 
