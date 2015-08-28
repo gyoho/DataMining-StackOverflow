@@ -8,7 +8,7 @@
   * [Project idea](https://docs.google.com/document/d/1WZd2XRapUTv14Pb3lrfYUzIT_FGbmTJb4SZZ3A79pMQ/edit?usp=sharing)
   * [Workflow](https://docs.google.com/document/d/1rMpjlBPND_8MaffLbLlmARjIiDDaMoFNovL23kEk6zQ/edit?usp=sharing)
 * Project Report: [Paper](https://www.dropbox.com/s/b9w6lcvavz6bw76/Stack_Overflow_Project_Report.pdf?dl=0)
-* Presentation: [Slides](https://docs.google.com/presentation/d/1mwojscOlnnBb0c8vI9DvmjXcxbSjg8UX8NzIn_aO8zQ/edit?usp=sharing)
+* Presentation: [Slides](https://www.dropbox.com/s/kwag0522dwhb8jj/Stack_Overflow-Network_Graph.pptx?dl=0)
 
 ## Resources
 * Ask Ubuntu: [Tutorial](http://askubuntu.com/tour)
