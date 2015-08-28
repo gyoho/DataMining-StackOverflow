@@ -1,0 +1,7 @@
+{
+  "name": "Heineken",
+  "description": "Ask Ubuntu Network Graph",
+  "repository": "https://git.heroku.com/compe239-heineken.git",
+  "logo": "https://git.heroku.com/compe239-heineken.git",
+  "keywords": ["node", "express", "static"]
+}

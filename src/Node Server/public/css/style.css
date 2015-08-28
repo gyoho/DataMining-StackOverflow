@@ -1,0 +1,93 @@
+
+/* sigma.js context : */
+.sigma-parent {
+    position: relative;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background: #000000;
+    height: 600px;
+    z-index:10;
+}
+.sigma-expand {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 20;
+    left: 0;
+    z-index:parent;
+    padding-top: 80px;
+}
+
+/*.sigma-height{
+    height:800px;
+    width:1200px;
+}*/
+
+.fb-like {
+    position: relative;
+    z-index:100;
+    margin-left:20px;
+    margin-top:40px;
+
+}
+
+.buttons-container{
+    padding-bottom: 8px;
+    padding-top: 12px;
+}
+
+#logo {
+    text-align: left;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: light;
+    color: #ffffff;
+    margin-left: 10px;
+    margin-top:20px;
+    opacity:0.5;
+    width:200px;
+    z-index:100;
+}
+
+#subheader {
+
+    text-align: left;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: light;
+    color: #ffffff;
+    padding-left: 20px;
+    padding-top:100px;
+    width:300px;
+    opacity:0.5;
+}
+
+a {
+    color: #bbbbbb
+}
+
+p {
+    padding-top: 25px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+}
+
+.footer {
+    text-align: left;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #aaaaaa;
+    margin-left:20px;
+
+    .help {
+
+        text-align: left;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        font-weight: normal;
+        color: #aaaaaa;
+    }
+}

@@ -1,5 +1,6 @@
 # untrack the gephi data
-data
+all_data
 gephi
 doc
 .DS_Store
+_DS_Store
