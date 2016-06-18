@@ -6,6 +6,9 @@ SJSU CMPE239 - Web and Data Mining class project
 ### Demo running on Heroku
 [Live Demo on Heroku](https://cmpe239-heineken.herokuapp.com/)
 
+## Data Pipeline
+![tech stack](https://github.com/gyoho/DataMining-StackOverflow/blob/master/tech%20stack.png)
+
 ## Docs
 * Logistics:
   * [Project idea](https://docs.google.com/document/d/1WZd2XRapUTv14Pb3lrfYUzIT_FGbmTJb4SZZ3A79pMQ/edit?usp=sharing)
